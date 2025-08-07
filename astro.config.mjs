@@ -3,7 +3,7 @@ import tailwind from '@astrojs/tailwind';
 
 export default defineConfig({
   integrations: [tailwind()],
-  site: 'https://signature-tree-service.com',
+  site: 'https://signaturetreeservices.com',
   compressHTML: true,
   build: {
     assets: 'assets'
