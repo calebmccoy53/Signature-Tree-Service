@@ -17,10 +17,99 @@ const { title, description = "Professional tree services including tree removal,
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <title>{title}</title>
     
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "@id": "https://signaturetreeservices.com",
+      "name": "Signature Tree Service",
+      "alternateName": "Signature Tree Services",
+      "description": "Professional tree removal, trimming, and emergency services in Greenville, SC. Specializing in residential tree removal with limited access.",
+      "url": "https://signaturetreeservices.com",
+      "telephone": "+1-864-999-0132",
+      "email": "signaturetreegsp@gmail.com",
+      "foundingDate": "2014",
+      "priceRange": "$$",
+      "paymentAccepted": "Cash, Check, Credit Card",
+      "currenciesAccepted": "USD",
+      "areaServed": {
+        "@type": "City",
+        "name": "Greenville",
+        "addressRegion": "SC",
+        "addressCountry": "US"
+      },
+      "serviceArea": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 34.8526,
+          "longitude": -82.3940
+        },
+        "geoRadius": 50000
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Tree Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Tree Removal",
+              "description": "Safe and efficient tree removal services including residential removal with limited access"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Tree Trimming",
+              "description": "Professional tree trimming and pruning services"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Emergency Tree Services",
+              "description": "24/7 emergency tree removal and storm cleanup services"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Stump Grinding",
+              "description": "Complete stump removal and grinding services"
+            }
+          }
+        ]
+      },
+      "openingHours": [
+        "Mo-Fr 07:00-18:00",
+        "Sa 08:00-16:00"
+      ],
+      "sameAs": [
+        "https://share.google/Mr33PEfrAOVT3ZgXm"
+      ]
+    }
+    </script>
   </head>
   <body class="font-sans antialiased">
     <slot />
