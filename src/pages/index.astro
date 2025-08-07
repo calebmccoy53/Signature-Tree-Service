@@ -1,0 +1,100 @@
+---
+// src/pages/index.astro
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+---
+
+<Layout title="Signature Tree Service - Professional Tree Care & Removal">
+  <Header />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-r from-green-800 to-green-600 text-white">
+      <div class="absolute inset-0 bg-black opacity-20"></div>
+      <div class="relative container mx-auto px-6 py-24">
+        <div class="max-w-4xl mx-auto text-center">
+          <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+            Professional Tree Services You Can Trust
+          </h1>
+          <p class="text-xl md:text-2xl mb-8 text-green-100">
+            Expert tree removal, trimming, and emergency services with 15+ years of experience
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="/contact" class="bg-white text-green-800 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-green-50 transition duration-200">
+              Get Free Estimate
+            </a>
+            <a href="tel:+1234567890" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-green-800 transition duration-200">
+              Call Emergency: (123) 456-7890
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-20 bg-gray-50">
+      <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl font-bold text-gray-800 mb-4">Our Tree Services</h2>
+          <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+            Comprehensive tree care solutions for residential and commercial properties
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Tree Removal -->
+          <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition duration-300">
+            <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+              <svg class="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z"/>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold mb-4">Tree Removal</h3>
+            <p class="text-gray-600 mb-6">Safe and efficient removal of hazardous, diseased, or unwanted trees with complete cleanup.</p>
+            <a href="/services" class="text-green-600 font-semibold hover:text-green-700">Learn More →</a>
+          </div>
+
+          <!-- Tree Trimming -->
+          <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition duration-300">
+            <div class="w-16 h-16 bg-green-100 rounded-lg flex items-center justify-center mb-6">
+              <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zM7 3V1M7 21v2"/>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold mb-4">Tree Trimming</h3>
+            <p class="text-gray-600 mb-6">Professional pruning to maintain tree health, safety, and aesthetic appeal.</p>
+            <a href="/services" class="text-green-600 font-semibold hover:text-green-700">Learn More →</a>
+          </div>
+
+          <!-- Emergency Services -->
+          <div class="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition duration-300">
+            <div class="w-16 h-16 bg-red-100 rounded-lg flex items-center justify-center mb-6">
+              <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z"/>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-semibold mb-4">Emergency Services</h3>
+            <p class="text-gray-600 mb-6">24/7 emergency response for storm damage and hazardous tree situations.</p>
+            <a href="tel:+1234567890" class="text-red-600 font-semibold hover:text-red-700">Call Now →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-green-600 text-white py-16">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold mb-4">Ready to Transform Your Property?</h2>
+        <p class="text-xl mb-8">Professional tree services that enhance safety, beauty, and value</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="/contact" class="bg-white text-green-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-green-50 transition duration-200">
+            Schedule Consultation
+          </a>
+          <a href="tel:+1234567890" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-green-600 transition duration-200">
+            Call (123) 456-7890
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
