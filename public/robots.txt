@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://signaturetreeservices.com/sitemap-index.xml
+Sitemap: https://signaturetreeservices.com/sitemap.xml
+
+# Contact info
+# Contact: signaturetreegsp@gmail.com
